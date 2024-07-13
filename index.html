@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-</head>
-
-<body>
-
-</body>
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta content="Encore Mains" property="og:title">
+    <meta content="ECM Website Public Build Test" property="og:description">
+    <meta content="https://encoremains.github.io/" property="og:url">
+    <link href="./cdn/lib/material/beer.min.css" rel="stylesheet">
+    <!-- <link href="./cdn/lib/metro/css/metro-all.css?ver=@@b-version" rel="stylesheet"> -->
+    <script type="module" src="./cdn/lib/material/beer.min.js"></script>
+    <script type="module" src="./cdn/lib/metro/js/metro.js"></script>
+  </head>
+  <body class="dark">
+    <!-- Header bars -->
+    <!-- Mobile -->
+    <header class="fixed">
+      <nav>
+        <h5>Encore Mains</h5>
+        <button class="circle transparent" data-ui="#option">
+          <i>expand_circle_down</i>
+          <menu id="option" class="left no-wrap">
+            <a>Changli Mains</a>
+          </menu>
+        </button>
+      </nav>
+    </header>
+    <main class="responsive">
+      <!-- PTB Warning -->
+      <article>
+        <h5>Public Test Build</h5>
+        <div class="small-divider"></div>
+        <p>This is an early build of the ECM Website. Everything is subject for change, improvement, or deletion.</p>
+      </article>
+    </main>
+  </body>
 </html>
