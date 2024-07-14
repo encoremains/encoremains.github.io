@@ -7,12 +7,11 @@
     <meta content="ECM Website Public Build Test" property="og:description">
     <meta content="https://encoremains.github.io/" property="og:url">
     <link href="./cdn/lib/material/beer.min.css" rel="stylesheet">
-    <link href="./cdn/lib/rmm/main-rmm.min.css" rel="stylesheet">
     <!-- <link href="./cdn/lib/metro/css/metro-all.css?ver=@@b-version" rel="stylesheet"> -->
     <script type="module" src="./cdn/lib/material/beer.min.js"></script>
     <script type="module" src="./cdn/lib/metro/js/metro.js"></script>
   </head>
-  <body class="light">
+  <body class="dark">
     <!-- Header bars -->
     <!-- Mobile -->
     <header class="fixed">
@@ -27,12 +26,20 @@
       </nav>
     </header>
     <main class="responsive">
-      <!-- PTB Warning -->
-      <article>
-        <h5>Public Test Build</h5>
-        <div class="small-divider"></div>
-        <p>This is an early build of the ECM Website. Everything is subject for change, improvement, or deletion.</p>
-      </article>
+      
     </main>
   </body>
+  <!-- ptb humscare -->
+  <div class="overlay blur active" id="ptbwarn">
+    <dialog class="active" id="ptbwarn">
+      <h5>Public Test Build</h5>
+      <div class="small-divider"></div>
+      <div>This is an early build of the ECM Website. Everything is subject for change, improvement, or deletion.</div>
+      <nav class="right-align">
+        <button class="border" data-ui="#ptbwarn">
+          I Understand
+        </button>
+      </nav>
+    </dialog>
+  </div>
 </html>
