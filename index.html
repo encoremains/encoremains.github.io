@@ -1,82 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>ECM</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
     <meta content="Encore Mains" property="og:title">
     <meta content="ECM Website Public Build Test" property="og:description">
     <meta content="https://encoremains.github.io/" property="og:url">
     <link href="./cdn/lib/material/beer.min.css" rel="stylesheet">
-    <!-- <link href="./cdn/lib/metro/css/metro-all.css?ver=@@b-version" rel="stylesheet"> -->
     <script type="module" src="./cdn/lib/material/beer.min.js"></script>
     <script type="module" src="./cdn/lib/metro/js/metro.js"></script>
-    <script type="module" src="./cdn/lib/button.js"></script>
   </head>
-  <body class="light" style="--primary:#a50dad;
---on-primary:#ffffff;
---primary-container:#ffd6f8;
---on-primary-container:#37003a;
---secondary:#6d586a;
---on-secondary:#ffffff;
---secondary-container:#f6dbf0;
---on-secondary-container:#261625;
---tertiary:#825247;
---on-tertiary:#ffffff;
---tertiary-container:#ffdad2;
---on-tertiary-container:#331109;
---error:#ba1a1a;
---on-error:#ffffff;
---error-container:#ffdad6;
---on-error-container:#410002;
---background:#fffbff;
---on-background:#1e1a1d;
---surface:#fff7fa;
---on-surface:#1e1a1d;
---surface-variant:#eddee8;
---on-surface-variant:#4e444b;
---outline:#7f747c;
---outline-variant:#d1c3cc;
---shadow:#000000;
---scrim:#000000;
---inverse-surface:#342f32;
---inverse-on-surface:#f8eef2;
---inverse-primary:#ffa9fa;
---surface-dim:#e0d8dc;
---surface-bright:#fff7fa;
---surface-container-lowest:#ffffff;
---surface-container-low:#fbf1f5;
---surface-container:#f5ebef;
---surface-container-high:#efe6ea;
---surface-container-highest:#e9e0e4;">
-    <!-- Header bars -->
+  <body class="light" style="--primary:#bc004b; --on-primary:#ffffff; --primary-container:#ffd9de; --on-primary-container:#400014; --secondary:#75565b; --on-secondary:#ffffff; --secondary-container:#ffd9de; --on-secondary-container:#2c1519; --tertiary:#795831; --on-tertiary:#ffffff; --tertiary-container:#ffddba; --on-tertiary-container:#2b1700; --error:#ba1a1a; --on-error:#ffffff; --error-container:#ffdad6; --on-error-container:#410002; --background:#fffbff; --on-background:#201a1b; --surface:#fff8f7; --on-surface:#201a1b; --surface-variant:#f3dddf; --on-surface-variant:#524345; --outline:#847375; --outline-variant:#d6c2c3; --shadow:#000000; --scrim:#000000; --inverse-surface:#362f2f; --inverse-on-surface:#fbeeee; --inverse-primary:#ffb2be; --surface-dim:#e3d7d8; --surface-bright:#fff8f7; --surface-container-lowest:#ffffff; --surface-container-low:#fdf1f1; --surface-container:#f8ebeb; --surface-container-high:#f2e5e6; --surface-container-highest:#ece0e0;">
+    <!-- Header Bar -->
     <!-- Mobile -->
     <header class="fixed">
       <nav>
-        <h5 class="max">Home</h5>
-        <button class="circle transparent" data-ui="#option">
+        <h5>Home</h5>
+        <div class="max"></div>
+        <a href="https://github.com/encoremains/encoremains.github.io">
+          <button class="circle">
+            <i>code</i>
+          </button>
+        </a>
+        <button class="circle" data-ui="#option">
           <i>globe</i>
           <menu id="option" class="left no-wrap">
-            <a>🇬🇧 English</a>
-            <a>🇪🇸 Spanish</a>
+            <article class="transparent">
+              English
+              <div><small>Current Language</small></div>
+            </article>
+            <div class="small-divider"></div>
+            <a>Work in Progress!</a>
           </menu>
         </button>
       </nav>
     </header>
+    <!-- Main UI, Mobile first, maybe. -->
     <main class="responsive">
       
     </main>
   </body>
-  <!-- ptb humscare -->
-  <div class="overlay blur active" id="ptbwarn">
-    <dialog class="active" id="ptbwarn">
-      <h5>Public Test Build</h5>
-      <div class="small-divider"></div>
-      <div>This is an early build of the ECM Website. Everything is subject for change, improvement, or deletion.</div>
-      <nav class="right-align">
-        <button class="border" id="bind" data-ui="#ptbwarn">
-          I Understand
-        </button>
-      </nav>
-    </dialog>
-  </div>
 </html>
