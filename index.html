@@ -10,17 +10,54 @@
     <!-- <link href="./cdn/lib/metro/css/metro-all.css?ver=@@b-version" rel="stylesheet"> -->
     <script type="module" src="./cdn/lib/material/beer.min.js"></script>
     <script type="module" src="./cdn/lib/metro/js/metro.js"></script>
+    <script type="module" src="./cdn/lib/button.js"></script>
   </head>
-  <body class="dark">
+  <body class="light" style="--primary:#a50dad;
+--on-primary:#ffffff;
+--primary-container:#ffd6f8;
+--on-primary-container:#37003a;
+--secondary:#6d586a;
+--on-secondary:#ffffff;
+--secondary-container:#f6dbf0;
+--on-secondary-container:#261625;
+--tertiary:#825247;
+--on-tertiary:#ffffff;
+--tertiary-container:#ffdad2;
+--on-tertiary-container:#331109;
+--error:#ba1a1a;
+--on-error:#ffffff;
+--error-container:#ffdad6;
+--on-error-container:#410002;
+--background:#fffbff;
+--on-background:#1e1a1d;
+--surface:#fff7fa;
+--on-surface:#1e1a1d;
+--surface-variant:#eddee8;
+--on-surface-variant:#4e444b;
+--outline:#7f747c;
+--outline-variant:#d1c3cc;
+--shadow:#000000;
+--scrim:#000000;
+--inverse-surface:#342f32;
+--inverse-on-surface:#f8eef2;
+--inverse-primary:#ffa9fa;
+--surface-dim:#e0d8dc;
+--surface-bright:#fff7fa;
+--surface-container-lowest:#ffffff;
+--surface-container-low:#fbf1f5;
+--surface-container:#f5ebef;
+--surface-container-high:#efe6ea;
+--surface-container-highest:#e9e0e4;">
     <!-- Header bars -->
     <!-- Mobile -->
     <header class="fixed">
       <nav>
-        <h5>Encore Mains</h5>
+        <h5 class="max">Home</h5>
         <button class="circle transparent" data-ui="#option">
-          <i>expand_circle_down</i>
+          <i>globe</i>
           <menu id="option" class="left no-wrap">
-            <a>Changli Mains</a>
+            <a>🇬🇧 English</a>
+            <a>🇪🇸 Spanish</a>
           </menu>
         </button>
       </nav>
@@ -36,7 +73,7 @@
       <div class="small-divider"></div>
       <div>This is an early build of the ECM Website. Everything is subject for change, improvement, or deletion.</div>
       <nav class="right-align">
-        <button class="border" data-ui="#ptbwarn">
+        <button class="border" id="bind" data-ui="#ptbwarn">
           I Understand
         </button>
       </nav>
